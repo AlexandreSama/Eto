@@ -15,7 +15,7 @@ class marryCommand extends Command {
         message.delete()
 
         if (message.mentions.users.size < 1) return message.channel.send("Tu ne peut pas te marier a personne") 
-        let user = message.guild.member(message.mentions.users.first()); 
+        let user = message.mentions.users.first()
         message.channel.send(`${user} Tu t'est marié avec ${message.author.username} ! Félicitation !!`,{ 
             embed: { 
                 image: { 
