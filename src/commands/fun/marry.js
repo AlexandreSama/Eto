@@ -16,13 +16,8 @@ class marryCommand extends Command {
 
         if (message.mentions.users.size < 1) return message.channel.send("Tu ne peut pas te marier a personne") 
         let user = message.mentions.users.first()
-        message.channel.send(`Félicitation ${message.author.username} ! Tu viens de te marier avec : ${user}`,{ 
-            embed: { 
-                image: { 
-                    url: "https://i.imgur.com/u67QLhB.gif" 
-                } 
-            } 
-        }) 
+        message.channel.send(`Félicitation ${message.author.username} ! Tu viens de te marier avec : ${user}`)
+        message.channel.send({files: ['https://i.imgur.com/u67QLhB.gif']})
         
     }
 }
