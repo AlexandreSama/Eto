@@ -21,7 +21,7 @@ class botInfos extends Command {
         .addField('Channels Totales', `${this.client.channels.cache.size}`, true) 
         .addField('Serveurs Totales', Math.ceil(this.client.guilds.cache.size), true) 
         .addField('Date de création du bot', this.client.user.createdAt.toLocaleString()) 
-        .addField('Librairie', `discord.js 12`, true) 
+        .addField('Librairie', `discord.js 13`, true) 
         .addField('Node.js Version', process.version, true) 
         .addField('Bot Version', "0.1.2", true) 
         .setTimestamp() 
