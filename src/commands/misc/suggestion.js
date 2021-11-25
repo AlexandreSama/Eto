@@ -20,12 +20,12 @@ class SuggestionCommand extends Command {
 
             new Discord.MessageButton()
             .setCustomId('suggestion_accept')
-            .setLabel('Accept')
+            .setLabel('Accepter')
             .setStyle('SUCCESS'),
     
             new Discord.MessageButton()
             .setCustomId('suggestion_deny')
-            .setLabel('Deny')
+            .setLabel('Refuser')
             .setStyle('DANGER')
     
         );
@@ -35,7 +35,7 @@ class SuggestionCommand extends Command {
             if (args.suggestion) {
     
                 let suggestionEmbed = new Discord.MessageEmbed()
-                    .setAuthor(`${message.author.username}'s suggested`, message.author.displayAvatarURL())
+                    .setAuthor(`${message.author.username} a suggérer`, message.author.displayAvatarURL())
                     .setDescription(`\`\`\`${args.suggestion}\`\`\``)
     
                 try {
@@ -55,13 +55,13 @@ class SuggestionCommand extends Command {
     
             } else {
     
-                return message.channel.send("❌ You can't suggest nothing")
+                return message.channel.send("❌ Tu ne peut pas ne rien suggérer !")
     
             }
     
         } else {
     
-            return message.channel.send("❌ Suggestions are not enabled")
+            return message.channel.send("❌ Les suggestions ne sont pas activés")
     
         }
 
