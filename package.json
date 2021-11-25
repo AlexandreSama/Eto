@@ -11,6 +11,8 @@
   "dependencies": {
     "discord-akairo": "github:Tricked-dev/discord-akairo",
     "discord.js": "^13.3.1",
-    "mysql2": "^2.3.3"
+    "mongoose": "^6.0.13",
+    "mysql2": "^2.3.3",
+    "reconlx": "^2.5.1"
   }
 }
