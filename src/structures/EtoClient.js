@@ -16,7 +16,7 @@ module.exports = class EtoClient extends AkairoClient {
             presence: {
                 status: "online",
                 activities: [{
-                    name: "Diclosure - You & Me",
+                    name: "Discord officiel: https://discord.gg/BpPWaQq",
                     type: "LISTENING"
                 }]
             },
