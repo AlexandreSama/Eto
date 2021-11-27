@@ -5,7 +5,7 @@ const {
 class BroadcastCommand extends Command {
     constructor() {
         super('broadcast', {
-            aliases: ['broadcast'],
+            aliases: ['broadcast', 'bdc', 'bd'],
             args: [{
                 id: "broadcastMessage", match: "content"
             }]
