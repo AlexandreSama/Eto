@@ -37,6 +37,7 @@ class SuggestionCommand extends Command {
                 let suggestionEmbed = new Discord.MessageEmbed()
                     .setAuthor(`${message.author.username} a suggérer`, message.author.displayAvatarURL())
                     .setDescription(`\`\`\`${args.suggestion}\`\`\``)
+                    .setImage("https://cdn.discordapp.com/attachments/886667858279542824/914559512445345802/suggestion.gif")
                     .setFooter("Requis Perm Administrateur pour accepter/refuser")
                     .setTimestamp()
                     
