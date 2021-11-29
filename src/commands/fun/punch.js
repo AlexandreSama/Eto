@@ -3,10 +3,10 @@ const {
 } = require('discord-akairo')
 const Discord = require('discord.js');
 
-class ServerinfosCommand extends Command {
+class PunchCommand extends Command {
     constructor() {
-        super('serverinfos', {
-            aliases: ['serverinfos', "sv", "discord"]
+        super('punch', {
+            aliases: ['punch']
         });
     }
        
@@ -45,7 +45,7 @@ class ServerinfosCommand extends Command {
     }
 }
 
-module.exports = ServerinfosCommand;
+module.exports = PunchCommand;
 
 
 
