@@ -31,8 +31,7 @@ class ReadyListener extends Listener{
             }
 
             if(results){
-
-                console.log('ok ?')
+                console.log('test')
 
                 guilds.forEach((guild) => {
 
@@ -42,32 +41,63 @@ class ReadyListener extends Listener{
 
                     }else{
 
-                        console.log('Besoin de crée une base de données')
-
-                        connection.query(`CREATE DATABASE ${guild}`, function(err, results) {
+                        connection.query('CREATE DATABASE' + "`" + guild + "`", function(err, results) {
 
                             if(err){
-
-                                console.log(err)
-
+                                connection.query('USE ' + '`' + guild + '`', function(err, results){
+                                    if(err){
+                                        console.log('Impossible d\'utiliser cet BDD, vérifier qu\'elle existe avec son identifiant : ' + guild)
+                                    }
+                                    if(results){
+                                        connection.query('SELECT ticketCategory FROM settings', function(err, results){
+                                            if(err){
+                                                console.log('La BDD ne contiens pas de settings, contacter Alexandre au plus vite ! Je vais essayer de forcer la création de cet table !')
+                                                connection.query(`CREATE TABLE settings (id INT PRIMARY KEY NOT NULL, ticketCategory VARCHAR(255))`, function(err, results){
+                                                    if(err){
+                                                        console.log('Impossible ! Il est trop fort pour moi.. contacter Alexandre avec cet erreur, qu\'il puisse nous aider : ')
+                                                        console.log(err)
+                                                    }
+                                                    if(results){
+                                                        console.log('J\'ai réussi a forcer la création, trop forte !')
+                                                    }
+                                                })
+                                            }
+                                        })
+                                    }
+                                })
                             }
-
                             if(results){
 
-                                console.log('OK !')
-
+                                connection.query("USE " + '`' + guild + '`', function(err, results){
+                                    if(err){
+                                        console.log('Impossible d\'utiliser cet BDD, vérifier qu\'elle existe avec son identifiant : ' + guild)
+                                    }
+                                    if(results){
+                                        connection.query('SELECT ticketCategory FROM settings', function(err, results){
+                                            if(err){
+                                                console.log('La BDD ne contiens pas de settings, contacter Alexandre au plus vite ! Je vais essayer de forcer la création de cet table !')
+                                                connection.query(`CREATE TABLE settings (id INT PRIMARY KEY NOT NULL, ticketCategory VARCHAR(255))`, function(err, results){
+                                                    if(err){
+                                                        console.log('Impossible ! Il est trop fort pour moi.. contacter Alexandre avec cet erreur, qu\'il puisse nous aider : ')
+                                                        console.log(err)
+                                                    }
+                                                    if(results){
+                                                        console.log('J\'ai réussi a forcer la création de la table pour la BDD : ' + guild + ', trop forte !')
+                                                    }
+                                                })
+                                            }
+                                            if(results){
+                                                console.log('La BDD est parfaitement en place !')
+                                            }
+                                        })
+                                    }
+                                })
                             }
-
                         })
-
                     }
-
                 })
-
             }
-
         })
-
     }
 }
 
