@@ -29,7 +29,7 @@ npm run test
 
 👤 **Alexandre & Patou**
 
-* Github: [@AlexandreSama & Patouuu](https://github.com/AlexandreSama & Patouuu)
+* Github: [@AlexandreSama & Patouuu](https://github.com/AlexandreSama & https://github.com/Patouuu)
 
 ## 🤝 Contributing
 
