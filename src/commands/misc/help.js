@@ -5,8 +5,8 @@ const {ButtonInteraction, MessageEmbed, MessageActionRow, MessageButton} = requi
 
 class helpCommand extends Command {
     constructor() {
-        super('help', {
-            aliases: ['help']
+        super('help2', {
+            aliases: ['help2']
         });
     }
 

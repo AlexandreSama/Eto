@@ -6,7 +6,7 @@ const Discord = require('discord.js');
 class HugCommand extends Command {
     constructor() {
         super('hug', {
-            aliases: ['hug', 'smack', 'bisous']
+            aliases: ['hug']
         });
     }
        
