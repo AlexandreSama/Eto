@@ -18,7 +18,7 @@ class heightBall extends Command {
     exec(message, args) {
         message.delete()
 
-        var res = ["Oui", "Non", "Peut-être", "Probablement", "A voir", "Surement pas", "Challah", "Miskine", "Starfoullah m'parle pas!"]
+        var res = ["Oui", "Non", "Peut-être", "Probablement", "A voir", "Surement pas", "Challah", "Miskine", "Starfoullah m'parle pas!", "Mec sort de chez toi !", "Je ne suis qu'une IA , pas une voyante.", "Ca me paraît possible"]
 
         if(!args.question){ 
             message.channel.send('Posez au moins une question.') 
