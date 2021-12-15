@@ -15,7 +15,7 @@ class ListeStaffCommand extends Command {
          message.delete()
 
         let lien =  new Discord.MessageEmbed()
-        .setColor('#0FFF00')
+        .setColor('#00FFEC')
         .setTitle(`Liste Des Membres Du Staff `)
         .setURL('https://discord.gg/BpPWaQq')
         .setAuthor('Patouuu', 'https://zupimages.net/up/21/49/h8q2.png')
