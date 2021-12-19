@@ -20,10 +20,10 @@ class RecrutementCommand extends Command {
         .setAuthor('Patouuu', 'https://zupimages.net/up/21/49/h8q2.png')
         .setDescription('')
         .addFields(
-            { name: '⚔️ `G-Form Recrutement Modérateur Discord`', value: '>>> Lien : [ici](https://docs.google.com/forms/d/e/1FAIpQLSdp3rrNu3Js9IwN-j-WWPfrdaMGLJ8-kw6F8gvMc25clUumYQ/viewform)\nContacter en cas de problèmes un **@Responsable Discord**' },
+            { name: '⚔️ `G-Form Recrutement Modérateur Discord`', value: '>>> Lien : [ici](https://docs.google.com/forms/d/e/1FAIpQLSdp3rrNu3Js9IwN-j-WWPfrdaMGLJ8-kw6F8gvMc25clUumYQ/viewform)\nContacter en cas de problèmes un **<@&744237615565242408>**' },
             { name: '\u200B', value: '\u200B' },
-            { name: '📢 `G-Form Recrutement Community Manager`', value: '>>> Lien : [ici](https://docs.google.com/forms/d/e/1FAIpQLSdKrUUySkK3KKUltv-ypp8BAguK1bmmjyVCmkrIfVvohkPbKA/viewform)\nContacter en cas de problèmes un **@Responsable Pôle CM**', inline: true },
-            { name: '🛡️ `G-Form Demande De Partenariat`', value: '>>> Lien : [ici](https://docs.google.com/forms/d/e/1FAIpQLSctxpfRkV7qm7GAteTSoKERgQlOhCefgBVeg1QO-FhzBVb8GA/viewform)\nContacter en cas de problèmes un **@Responsable Discord** ', inline: false },
+            { name: '📢 `G-Form Recrutement Community Manager`', value: '>>> Lien : [ici](https://docs.google.com/forms/d/e/1FAIpQLSdKrUUySkK3KKUltv-ypp8BAguK1bmmjyVCmkrIfVvohkPbKA/viewform)\nContacter en cas de problèmes un **<@&918794021051203584>**', inline: true },
+            { name: '🛡️ `G-Form Demande De Partenariat`', value: '>>> Lien : [ici](https://docs.google.com/forms/d/e/1FAIpQLSctxpfRkV7qm7GAteTSoKERgQlOhCefgBVeg1QO-FhzBVb8GA/viewform)\nContacter en cas de problèmes un **<@&744237615565242408>** ', inline: false },
             { name: '\u200B', value: '\u200B' },
             { name: '🚸 `G-Form Recrutement Animateur(trice)`', value: '>>> Lien : **SOON** ', inline: true },
             { name: '✍️  `G-Form Recrutement Rédacteur(trice)`', value: '>>> Lien : **SOON** ', inline: false },
